@@ -16,6 +16,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./frontend:/app
+    ports:
+      - 3000:3000
     links:
       - api
 

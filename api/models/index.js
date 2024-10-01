@@ -20,7 +20,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 /* Create database tables and models */
-db.contacts = require("./contact.model.js")(sequelize, Sequelize);
-db.phones = require("./phone.model.js")(sequelize, Sequelize);
+// db.contacts = require("./contact.model.js")(sequelize, Sequelize);
+// db.phones = require("./phone.model.js")(sequelize, Sequelize);
 
 module.exports = db;
