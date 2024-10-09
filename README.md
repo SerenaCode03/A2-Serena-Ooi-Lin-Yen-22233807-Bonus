@@ -20,4 +20,10 @@
 
 * Files involved: `category.model.js`, `category.controller.js`, `categories.routes.js`
 
+**c. habits table**
+* The table contains attributes such as habit_id, habit_desc, habit_status, category_id and user_id. The primary key is habit_id whereas the user_id and category_id act as the foreign keys
+
+![habits table](image/Screenshot%202024-10-09%20162402.png)
+
+* Files involved: `habit.model.js`, `habit.controller.js`, `habits.routes.js`
 
