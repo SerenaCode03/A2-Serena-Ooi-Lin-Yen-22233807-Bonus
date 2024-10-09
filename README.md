@@ -93,12 +93,38 @@ is habit_id whereas the user_id and category_id act as the foreign keys
 ![Deleted confirmation message](image/Screenshot%202024-10-09%20174421.png)
 
 * To confirm the category with category_id 3 is deleted:
+
 ![Confirm category is deleted](image/Screenshot%202024-10-09%20174458.png)
 
 **i. Create habit**
+* Command: http POST http://localhost/api/users/1/categories/1/habits habit_desc='Jog 30 minutes'
+* Create a new habit with description 'Jog 30 minutes'
+
+![New habit](image/Screenshot%202024-10-09%20175647.png)
+
+* For better illustration purposes in k and l, another 2 new habits are created
+![Extra habit](image/Screenshot%202024-10-09%20175759.png)
+![Extra habit](image/Screenshot%202024-10-09%20180000.png)
 
 **j. Update habit**
+* Command: http PUT http://localhost/api/users/1/categories/1/habits/1 habit_desc='Jog 30 minutes in morning'
+* In habit with habit_id 1 associated with user_id 1 and category_id 1, habit description is updated from 'Jog 30 minutes' to 'Jog 30 minutes in morning'
+
+![Updated habit](image/Screenshot%202024-10-09%20180104.png)
+![Updated habit](image/Screenshot%202024-10-09%20180803.png)
 
 **k. Get habit**
+* Command: http GET http://localhost/api/users/1/categories/1/habits
+* Retrieves all habits associated with user_id 1 and category_id 1
+
+![Retrieves all habits](image/Screenshot%202024-10-09%20180226.png)
 
 **l. Delete habit**
+* Command: http DELETE http://localhost/api/users/1/categories/1/habits/3
+* Habit with habit_id 3 is deleted
+
+![Deleted habit](image/Screenshot%202024-10-09%20180311.png)
+
+* To confirm habit with habit_id 3 is deleted:
+
+![Deleted habit](image/Screenshot%202024-10-09%20180346.png)
