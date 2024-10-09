@@ -2,7 +2,7 @@ const db = require("../models");
 const Users = db.users;
 const Op = db.Sequelize.Op;
 
-// Create phone
+// Create user
 exports.create = (req, res) => {
     const user = {
         username: req.body.username,
@@ -22,7 +22,7 @@ exports.create = (req, res) => {
         });
 };
 
-// Get all phones
+// Get all users
 exports.findAll = (req, res) => {
 
     Users.findAll()
@@ -36,7 +36,7 @@ exports.findAll = (req, res) => {
         });
 };
 
-// Get one phone by id
+// Get one user by id
 exports.findOne = (req, res) => {
     const user_id = req.params.user_id;
 
@@ -52,7 +52,7 @@ exports.findOne = (req, res) => {
     );
 };
 
-// Update one phone by id
+// Update one user by id
 exports.update = (req, res) => {
     const user_id = req.params.user_id;
 
@@ -77,7 +77,7 @@ exports.update = (req, res) => {
     });
 };
 
-// Delete one phone by id
+// Delete one user by id
 exports.delete = (req, res) => {
     const user_id = req.params.user_id;
 
