@@ -22,5 +22,6 @@ db.sequelize = sequelize;
 /* Create database tables and models */
 db.users = require("./user.model.js")(sequelize, Sequelize);
 db.categories = require("./category.model.js")(sequelize, Sequelize);
+db.habits = require("./habit.model.js")(sequelize, Sequelize);
 
 module.exports = db;
