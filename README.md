@@ -67,12 +67,33 @@ is habit_id whereas the user_id and category_id act as the foreign keys
 ![Double check deleted user](image/Screenshot%202024-10-09%20171443.png)
 
 **e. Create category**
+* Command: http POST http://localhost/api/users/1/categories category_name='Fitness'
+* A new category with category_name 'Fitness' is created
+
+![New category](image/Screenshot%202024-10-09%20173258.png)
+
+* For better illustration purposes in g and h, another 2 new categories are created
+![Extra category](image/Screenshot%202024-10-09%20174017.png)
+![Extra category](image/Screenshot%202024-10-09%20173752.png)
 
 **f. Update category**
+* Command: http PUT http://localhost/api/users/1/categories/1 category_name='Body fitness'
+* In category with category_id 1, the category_name is updated from 'Fitness' to 'Body fitness'
+![Updated category](image/Screenshot%202024-10-09%20173927.png)
+![Updated category](image/Screenshot%202024-10-09%20174231.png)
 
 **g. Get category**
+* Command: http GET http://localhost/api/users/1/categories
+* Retrieve all categories associated with user_id 1
+![Retrieves all categories](image/Screenshot%202024-10-09%20174322.png)
 
 **h. Delete category**
+* Command: http DELETE http://localhost/api/users/1/categories/3
+* The category with category_id 3 is deleted successfully
+![Deleted confirmation message](image/Screenshot%202024-10-09%20174421.png)
+
+* To confirm the category with category_id 3 is deleted:
+![Confirm category is deleted](image/Screenshot%202024-10-09%20174458.png)
 
 **i. Create habit**
 
