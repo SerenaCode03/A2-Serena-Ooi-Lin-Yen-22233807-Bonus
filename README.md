@@ -11,6 +11,13 @@
 
 ![users table](image/Screenshot%202024-10-09%20152251.png)
 
-* Files involved: `user.model.js`, `user.controller.js`, `useres.routes.js`
+* Files involved: `user.model.js`, `user.controller.js`, `users.routes.js`
+
+**b. categories table**
+* The table contains attributes such as category_id, category_name and user_id. The primary key is category_id whereas the user_id acts as the foreign key
+
+![categories table](image/Screenshot%202024-10-09%20155458.png)
+
+* Files involved: `category.model.js`, `category.controller.js`, `categories.routes.js`
 
 
