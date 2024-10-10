@@ -6,7 +6,7 @@ function Landing(){
     return(
         <div className='page'>
             <div className='image-section'>
-                <img src="/assets/istockphoto-1336490738-612x612.jpg" alt='Landing image'/>
+                <img src="/assets/landing-page-img.png" alt='Landing image'/>
             </div>
             <div className='text-section'>
                 <h1>Z-Habit</h1>
