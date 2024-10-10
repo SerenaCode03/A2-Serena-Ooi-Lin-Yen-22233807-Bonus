@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 
 function Login(){
+    const navigate = useNavigate();
+
     return(
         <div className='login-page'>
             <p className='welcome-text'>Welcome back !</p>
@@ -12,10 +15,12 @@ function Login(){
                 <img src="/assets/mdi_password-outline.svg" className="password-icon"/>
                 <input type="text" placeholder="Password" className='password-input' />
             </div>
-            <button className='login-button'>
+            <button className='login-button' onClick={()=>navigate('/HomePage')}>
                 Login
             </button>
-            <p className='signup-link'>Don't have an account?</p>
+            <p className='signup-link' onClick={()=>navigate('/SignUpPage')}>
+                Don't have an account?
+            </p>
         </div>
     );
 }

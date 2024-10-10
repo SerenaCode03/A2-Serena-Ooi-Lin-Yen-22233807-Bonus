@@ -133,4 +133,12 @@ is habit_id whereas the user_id and category_id act as the foreign keys
 
 **a. Landing Page**
 
-![landing page UI](image/Screenshot-landingPage.png)
+![landing page UI](image/Screenshot-landing-page.png)
+
+**b. Login Page**
+
+![login page UI](image/Screenshot-login-page.png)
+
+**c. Sign Up Page**
+
+![sign up page UI](image/Screenshot-signup-page.png)

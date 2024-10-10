@@ -5,7 +5,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-.login-page{
+.login-page, .signup-page{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,12 @@
     background-color: #f7f2ec;
 }
 
-.welcome-text{
+.welcome-text, .signup-text{
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 40px;
 }
-.username-container,.password-container{
+.username-container,.password-container, .email-container{
     display: flex;
     align-items: center;
     border: 2px solid #000000;
@@ -30,18 +30,18 @@
     background-color: #fffef8;
 }
 
-.username-container{
+.username-container, .email-container{
     margin-bottom: 40px;
 }
 
-.user-icon,.password-icon{
+.user-icon,.password-icon, .email-icon{
     width: 30px;
     height: 30px;
     margin-right: 15px;
     margin-left: 10px;
 }
 
-.username-input,.password-input{
+.username-input,.password-input, .email-input{
     border: none;
     outline: none;
     flex: 1; 
@@ -50,7 +50,7 @@
     background-color: #fffef8;
 }
 
-.login-button{
+.login-button, .signup-button{
     align-items: center;
     border: none;
     background-color: #eadacb;
@@ -65,7 +65,7 @@
     transition: background-color 0.3s ease;
 }
 
-.login-button:hover {
+.login-button:hover, .signup-button:hover {
     background-color: #e0d0c0;
 }
 
