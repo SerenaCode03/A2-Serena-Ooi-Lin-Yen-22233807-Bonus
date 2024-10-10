@@ -52,6 +52,38 @@ exports.findOne = (req, res) => {
     );
 };
 
+//User login verification
+exports.verifyByUsernameAndPassword = async (req, res) => {
+    const { username, password } = req.body;
+
+    try {
+        const user = await Users.findOne({
+            where: { username }
+        });
+
+        if (!user) {
+            return res.status(404).send({ message: 'User not found' });
+        }
+
+        if (user.password !== password) {
+            return res.status(401).send({ message: 'Invalid password' });
+        }
+
+        res.status(200).send({
+            message: 'Login successful',
+            user: {
+                user_id: user.user_id,
+                username: user.username,
+                email: user.email
+            }
+        });
+    } catch (error) {
+        res.status(500).send({
+            message: 'Error during login: ' + error.message
+        });
+    }
+};
+
 // Update one user by id
 exports.update = (req, res) => {
     const user_id = req.params.user_id;
