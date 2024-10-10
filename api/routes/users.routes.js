@@ -9,7 +9,7 @@ module.exports = app => {
 
     router.get("/users/:user_id", users.findOne);
 
-    router.get("/users/login", users.verifyByUsernameAndPassword);
+    router.post("/users/login", users.verifyByUsernameAndPassword);
 
     router.put("/users/:user_id", users.update);
     
