@@ -128,3 +128,9 @@ is habit_id whereas the user_id and category_id act as the foreign keys
 * To confirm habit with habit_id 3 is deleted:
 
 ![Deleted habit](image/Screenshot%202024-10-09%20180346.png)
+
+# 3. Frontend Implementation
+
+**a. Landing Page**
+
+![landing page UI](image/Screenshot-landingPage.png)
