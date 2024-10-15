@@ -1,3 +1,5 @@
+Link: https://github.com/SerenaCode03/A2-Serena-Ooi-Lin-Yen-22233807-Bonus.git
+
 # 1. Database Creation
 * There will be 3 tables in the database, namely 'users', 'categories' and 'habits'
 ![database design](image/databasedesign.png)
